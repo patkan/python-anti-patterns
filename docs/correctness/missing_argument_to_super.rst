@@ -3,7 +3,7 @@ Missing argument to ``super()``
 
 ``super()`` enables you to access the methods and members of a parent class without referring to the parent class by name. For a single inheritance situation the first argument to ``super()`` should be the name of the current child class calling ``super()``, and the second argument should be ``self``, that is, a reference to the current object calling ``super()``.
 
-.. note:: This error is only raised for Python versions 2.x which support new-style classes.
+.. note:: This error is only raised for Python versions 2.x which don't support new-style classes.
 
 Anti-pattern
 ------------
@@ -60,7 +60,4 @@ References
 - `Stack Overflow - What is a basic example of single inheritance using super()? <http://stackoverflow.com/questions/1173992/what-is-a-basic-example-of-single-inheritance-using-the-super-keyword-in-pytho>`_
 - `Stack Overflow - Python super() inheritance and arguments needed <http://stackoverflow.com/questions/15896265/python-super-inheritance-and-arguments-needed>`_
 
-Status
-------
 
-- No automated check available. `Create it <https://www.quantifiedcode.com/app/patterns>`_ with `Cody <http://docs.quantifiedcode.com/patterns/language/index.html>`_.

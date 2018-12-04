@@ -10,8 +10,8 @@ The code below demonstrates some potential unintended behavior that can result w
 
 .. code:: python
 
-    def contains_magic_number(list, magic_number):
-        for i in list:
+    def contains_magic_number(numbers, magic_number):
+        for i in numbers:
             if i == magic_number:
                 print("This list contains the magic number")
         else:
@@ -31,8 +31,8 @@ If the ``else`` clause should not always execute at the end of a loop clause, th
 
 .. code:: python
 
-    def contains_magic_number(list, magic_number):
-        for i in list:
+    def contains_magic_number(numbers, magic_number):
+        for i in numbers:
             if i == magic_number:
                 print("This list contains the magic number.")
                 # added break statement here
@@ -49,7 +49,4 @@ References
 - PyLint - W0120, useless-else-on-loop
 - `Python Standard Library - else Clauses on Loops <https://docs.python.org/2/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops>`_
 
-Status
-------
 
-- `Automated code check available <https://www.quantifiedcode.com/app/pattern/85a7c6e206f746ccb8955c5e8a40bfc1>`_
